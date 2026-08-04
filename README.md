@@ -49,18 +49,6 @@ This project demonstrates a production-inspired ETL pipeline built using **Pytho
 | 🔒 **Environment Variables** | ✅ |
 | 📊 **Modular ETL Design** | ✅ |
 
-<div align="center">
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-
-</div>
-
----
-
 ## 🧰 Tech Stack
 
 | Technology | Purpose |
@@ -178,24 +166,5 @@ CI/CD deployment
 Data Quality Checks
 
 Email Notifications
-
-<div align="center">
-
-## 👨‍💻 Author
-
-### **Mirza Haider Rehman**
-
-🎓 **Bachelor of Software Engineering **
-
-☁️ **Aspiring Cloud Data Engineer**
-
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com) [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com)
-
-<br>
-
-⭐ **If you like this project, don't forget to give it a Star!**
-
-</div>
-
 
 
