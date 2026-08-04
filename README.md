@@ -16,7 +16,7 @@
 
 ## 📌 Overview
 
-This project demonstrates a production-inspired ETL pipeline built using Python, Apache Airflow, Docker, and Snowflake. 
+This project demonstrates a production-inspired ETL pipeline built using Python, Apache Airflow, Docker, and Snowflake.
 
 **The workflow automatically:**
 * Extracts S&P 500 company symbols from Wikipedia
@@ -33,15 +33,12 @@ This project demonstrates a production-inspired ETL pipeline built using Python,
 ┌──────────────────┐      ┌─────────┐      ┌─────────────────────────┐      ┌───────────┐      ┌──────────────────┐
 │ Wikipedia S&P 500│ ───> │ Extract │ ───> │ Financial Modeling Prep │ ───> │ Transform │ ───> │ Snowflake / Airflow│
 └──────────────────┘      └─────────┘      └─────────────────────────┘      └───────────┘      └──────────────────┘
-└──────────────────┘      └─────────┘      └─────────────────────────┘      └───────────┘      └──────────────────┘
 
 📋 FeaturesFeatureStatusExtract Data✅Data Cleaning✅Snowflake Loading✅Airflow Scheduling✅Automatic Retries✅Docker Support✅Environment Variables✅Modular ETL Design✅
 
-🧰 Tech StackTechnologyPurposePythonETL DevelopmentApache AirflowWorkflow OrchestrationSnowflakeCloud Data WarehouseDockerContainerizationPandasData Transformation
+🧰 Tech StackTechnologyPurposePythonETL DevelopmentApache AirflowWorkflow OrchestrationSnowflakeCloud Data WarehouseDockerContainerizationPandasData TransformationRequestsAPI CallsGit & GitHubVersion Control
 
-📁 Project Structure
-Plaintext
-sp500-airflow-pipeline/
+📁 Project StructurePlaintextsp500-airflow-pipeline/
 │
 ├── dags/
 │   ├── sp500_pipeline.py
@@ -55,100 +52,35 @@ sp500-airflow-pipeline/
 ├── docker-compose.yaml
 ├── requirements.txt
 ├── .gitignore
-└── README.md
+└── .env
 
-🔄 ETL Workflow
-1. Extract
-Extract S&P 500 symbols from Wikipedia
+🔄 ETL Workflow🔍 ExtractRead S&P 500 symbols from WikipediaConnect to Financial Modeling Prep APIDownload company profiles
+⚡ TransformConvert JSON $\rightarrow$ DataFrameSelect required columnsClean datasetRename columns
 
-Connect to Financial Modeling Prep API
+📥 LoadConnect to SnowflakeUpload transformed datasetStore in warehouse
 
-Download company profiles
+⏱️ Airflow DAGPlaintextExtract ──> Transform ──> Load
 
-2. Transform
-Convert JSON to DataFrame
-
-Select required columns
-
-Clean dataset
-
-Rename columns
-
-3. Load
-Connect to Snowflake
-
-Store in warehouse
-
-Plaintext
-Extract ──> Transform ──> Load
 Runs automatically every: Every 5 Minutes
 
-Minutes
+📊 Sample OutputSymbolCompanySectorMMM3M CompanyIndustrialsAOSA. O. SmithIndustrials
 
-🚀 Getting Started
-1. Clone Repository
-Bash
-git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git)
+📸 ScreenshotsAirflow DAGSuccessful PipelineSnowflake
+
+🚀 Getting Started1. Clone RepositoryBashgit clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git)
 cd YOUR_REPOSITORY
 
-2. Install Dependencies
-Bash
-pip install -r requirements.txt
+2. Install DependenciesBashpip install -r requirements.txt
 
-3. Configure Environment Variables
-Code snippet
-FMP_API_KEY=YOUR_API_KEY
+3. Configure Environment VariablesCode snippetFMP_API_KEY=YOUR_API_KEY
 SNOWFLAKE_PASSWORD=YOUR_PASSWORD
 
-4. Start Airflow
-Bash
-docker compose up -d
-5. Open Airflow UI
-Go to your browser and open:
+4. Start AirflowBashdocker compose up -d
 
-Plaintext
-http://localhost:8080
+5. Open Airflow UIGo to your browser and open:Plaintexthttp://localhost:8080
 
-🔒 Security
-✅ Secrets stored using Environment Variables
+🔒 Security✅ Secrets stored using Environment Variables✅ .env ignored by Git✅ No credentials committed to repository
 
-✅ .env ignored by Git
+🔮 Future ImprovementsLoad all 500 companiesHistorical stock pricesIncremental loadingAirflow ConnectionsAirflow VariablesCI/CD deploymentData Quality ChecksEmail NotificationsUnit Testing
 
-✅ No credentials committed to repository
-
-🔮 Future Improvements
-Load all 500 companies
-
-Historical stock prices
-
-Incremental loading
-
-Airflow Connections
-
-Airflow Variables
-
-CI/CD deployment
-
-Data Quality Checks
-
-Email Notifications
-
-🛠️ Skills Demonstrated
-✅ Data Engineering
-
-✅ ETL Pipeline Design
-
-✅ Apache Airflow
-
-✅ Snowflake
-
-✅ Docker
-
-✅ REST APIs
-
-✅ Pandas
-
-✅ Workflow Automation
-
-✅ Cloud Data Warehousing
-
+🛠️ Skills Demonstrated✅ Data Engineering✅ ETL Pipeline Design✅ Apache Airflow✅ Snowflake✅ Docker✅ REST APIs✅ Pandas✅ Workflow Automation✅ Cloud Data Warehousing
