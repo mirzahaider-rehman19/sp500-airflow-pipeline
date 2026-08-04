@@ -1,55 +1,70 @@
 <div align="center">
 
-# S&P 500 ETL Pipeline
+# 📊 S&P 500 ETL Pipeline
 
-### Apache Airflow | Snowflake
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Apache Airflow](https://img.shields.io/badge/Apache%20Airflow-017CEE?style=for-the-badge&logo=Apache%20Airflow&logoColor=white)
+![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=for-the-badge&logo=Snowflake&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![Apache Airflow](https://img.shields.io/badge/Apache%20Airflow-017CEE?style=for-the-badge&logo=Apache%20Airflow&logoColor=white)](https://airflow.apache.org/)
-[![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=for-the-badge&logo=snowflake&logoColor=white)](https://www.snowflake.com/)
-[![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
-[![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
-
-⭐ **Automated ETL Pipeline for S&P 500 Company Data using Apache Airflow & Snowflake**
+⭐ **Automated ETL Pipeline for S&P 500 Company Data using Apache Airflow & Snowflake** ⭐
 
 </div>
 
 ---
 
-## 📖 Overview
+## 📌 Overview
 
-This project demonstrates a production-inspired ETL pipeline built using Python, Apache Airflow, Docker, and Snowflake.
+This project demonstrates a production-inspired ETL pipeline built using Python, Apache Airflow, Docker, and Snowflake. 
 
-The workflow automatically:
-- ✅ Extracts S&P 500 company symbols from Wikipedia
-- ✅ Retrieves company profile data from the Financial Modeling Prep API
-- ✅ Cleans and transforms the dataset using Pandas
-- ✅ Loads the processed data into Snowflake
-- ✅ Executes automatically every 5 minutes using Airflow Scheduler
+**The workflow automatically:**
+* Extracts S&P 500 company symbols from Wikipedia
+* Connects to Financial Modeling Prep API
+* Transform with Pandas
+* Load data into Snowflake Data Warehouse
+* Executes automatically every **5 minutes** using Airflow scheduler
 
 ---
 
 ## 🏗️ ETL Architecture
+┌──────────────────┐      ┌─────────┐      ┌─────────────────────────┐      ┌───────────┐      ┌──────────────────┐
+│ Wikipedia S&P 500│ ───> │ Extract │ ───> │ Financial Modeling Prep │ ───> │ Transform │ ───> │ Snowflake / Airflow│
+└──────────────────┘      └─────────┘      └─────────────────────────┘      └───────────┘      └──────────────────┘
+
+---
+
+## 📋 Features
+
+| Feature | Status |
+| :--- | :---: |
+| **Extract Data** | ✅ |
+| **Data Cleaning** | ✅ |
+| **Snowflake Loading** | ✅ |
+| **Airflow Scheduling** | ✅ |
+| **Automatic Retries** | ✅ |
+| **Docker Support** | ✅ |
+| **Environment Variables** | ✅ |
+| **Modular ETL Design** | ✅ |
+
+---
+
+## 🧰 Tech Stack
+
+| Technology | Purpose |
+| :--- | :--- |
+| **Python** | ETL Development |
+| **Apache Airflow** | Workflow Orchestration |
+| **Snowflake** | Cloud Data Warehouse |
+| **Docker** | Containerization |
+| **Pandas** | Data Transformation |
+
+---
+
+## 📁 Project Structure
 
 ```text
-Wikipedia S&P 500 ──> Extract ──> FMP API ──> Transform with Pandas ──> Snowflake ──> Apache Airflow Scheduler
-🔄 Pipeline FlowPlaintextwikipedia
-   │
-   ▼
-Fetch S&P 500 Symbols
-   │
-   ▼
-Financial Modeling Prep API
-   │
-   ▼
-Transform Data (Pandas)
-   │
-   ▼
-Snowflake Data warehouse
-   │
-   ▼
-Apache Airflow Scheduler
-📊 FeaturesFeatureStatusExtract Data🟩Data Cleaning🟩Snowflake Loading🟩Airflow Scheduling🟩Automatic Retries🟩Docker Support🟩Environment Variables🟩Modular ETL Design🟩🧰 Tech StackTechnologyPurposePythonETL DevelopmentApache AirflowWorkflow OrchestrationSnowflakeCloud Data WarehouseDockerContainerizationPandasData TransformationRequestsAPI CallsGit & GitHubVersion Control📁 Project StructurePlaintextsp500-airflow-pipeline/
+sp500-airflow-pipeline/
 │
 ├── dags/
 │   ├── sp500_pipeline.py
@@ -57,19 +72,86 @@ Apache Airflow Scheduler
 │   ├── transform.py
 │   ├── load.py
 │   └── config.py
-│
 ├── plugins/
 ├── logs/
 ├── Dockerfile
 ├── docker-compose.yaml
 ├── requirements.txt
 ├── .gitignore
-└── .env
+└── README.md
 
-⚡ ETL Workflow📥 ExtractRead S&P 500 symbols from WikipediaConnect to Financial Modeling Prep APIDownload company profiles🔄 TransformConvert JSON ➔ DataFrameSelect required columnsClean datasetRename columns☁️ LoadConnect to SnowflakeUpload transformed datasetStore in warehouse🕒 Airflow DAGRuns automatically every: Every 5 Minutes📋 Sample OutputSymbolCompanySectorMMM3M CompanyIndustrialsAOSA. O. SmithIndustrials🚀 Getting StartedClone RepositoryBashgit clone [https://github.com/mirzahaider-rehman19/sp500-airflow-pipeline.git](https://github.com/mirzahaider-rehman19/sp500-airflow-pipeline.git)
+🔄 ETL Workflow1. ExtractExtract S&P 500 symbols from WikipediaConnect to Financial Modeling Prep APIDownload company profiles2. TransformConvert JSON $\rightarrow$ DataFrameSelect required columnsClean datasetRename columns3. LoadConnect to SnowflakeStore in warehouse⏱️ Airflow DAGRuns automatically every: Every 5 Minutes🚀 Getting Started1. Clone Repository
+git clone [https://github.com/YOUR_USERNAME/sp500-airflow-pipeline.git](https://github.com/YOUR_USERNAME/sp500-airflow-pipeline.git)
 cd sp500-airflow-pipeline
-Install DependenciesBashpip install -r requirements.txt
-Configure Environment VariablesCreate a .env file in the root directory:Code snippetFMP_API_KEY=YOUR_API_KEY
-SNOWFLAKE_PASSWORD=YOUR_PASSWORD
-Start AirflowBashdocker compose up -d
-Open Airflow👉 http://localhost:8080🔒 Security✔️ Secrets stored using Environment Variables✔️ .env ignored by Git✔️ No credentials committed to repository🔮 Future ImprovementsFuture EnhancementDescriptionLoad all 500 companiesExpand scope beyond initial sampleHistorical stock pricesIntegrate time-series market datasetsIncremental loadingOptimize pipeline for delta updatesAirflow ConnectionsSecure credential management via UIAirflow VariablesDynamic runtime configurationsAWS DeploymentCloud-native hosting setupData Quality ChecksAutomated schema and anomaly validationEmail NotificationsAlerting system for task failuresCI/CD PipelineAutomated testing and deployment workflowsUnit TestingRobust code testing via Pytest🛠️ Skills DemonstratedSkill / DomainDescriptionData EngineeringDesigning robust data pipelinesETL Pipeline DesignExtract, Transform, Load orchestrationApache AirflowDAG building and task schedulingSnowflakeCloud data warehousing and queryingDockerEnvironment containerizationREST APIsFetching live external dataPandasHigh-performance data wranglingWorkflow AutomationEnd-to-end hands-free executionCloud Data WarehousingScalable cloud data management👤 AuthorMirza Haider Rehman💼 Aspiring Cloud Data Engineer⭐ If you like this project, don't forget to give it a Star!
+
+pip install -r requirements.txt
+
+3. Configure Environment Variables
+Create a .env file or update your configuration with:
+
+Code snippet
+FMP_API_KEY=your_fmp_api_key
+SNOWFLAKE_USER=your_user
+SNOWFLAKE_PASSWORD=your_password
+SNOWFLAKE_ACCOUNT=your_account
+SNOWFLAKE_WAREHOUSE=your_warehouse
+SNOWFLAKE_DATABASE=your_database
+SNOWFLAKE_SCHEMA=your_schema
+Note: Make sure your .env and credentials are secure and ignored by Git (do not push passwords to GitHub!).
+
+4. Start Airflow
+Bash
+docker compose up -d
+5. Open Airflow UI
+Go to your browser and open:
+
+Plaintext
+http://localhost:8080
+🔒 Security
+✅ Secrets stored using Environment Variables
+
+✅ .env ignored by Git
+
+✅ No credentials committed to repository
+
+🔮 Future Improvements
+Load all 500 companies
+
+Historical stock prices
+
+Incremental loading
+
+Airflow Connections
+
+Airflow Variables
+
+CI/CD deployment
+
+Data Quality Checks
+
+Email Notifications
+
+Unit Testing
+
+🛠️ Skills Demonstrated
+✅ Data Engineering
+
+✅ ETL Pipeline Design
+
+✅ Apache Airflow
+
+✅ Snowflake
+
+✅ Docker
+
+✅ REST APIs
+
+✅ Pandas
+
+✅ Workflow Automation
+
+✅ Cloud Data Warehousing
+
+
+
+
