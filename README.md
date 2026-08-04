@@ -59,17 +59,21 @@ This project demonstrates a production-inspired ETL pipeline built using **Pytho
 
 </div>
 
+---
+
 ## 🧰 Tech Stack
 
 | Technology | Purpose |
 | :--- | :--- |
-| **🐍 Python** | ETL Development |
-| **🌪️ Apache Airflow** | Workflow Orchestration |
-| **❄️ Snowflake** | Cloud Data Warehouse |
-| **🐳 Docker** | Containerization |
-| **🐼 Pandas** | Data Transformation |
-| **🌐 Requests** | API Calls |
-| **🐙 Git & GitHub** | Version Control |
+| **Python** | ETL Development |
+| **Apache Airflow** | Workflow Orchestration |
+| **Snowflake** | Cloud Data Warehouse |
+| **Docker** | Containerization |
+| **Pandas** | Data Transformation |
+| **Requests** | API Calls |
+| **Git & GitHub** | Version Control |
+## 🧰 Tech Stack
+
 
 📁 Project Structure
 Plaintext
