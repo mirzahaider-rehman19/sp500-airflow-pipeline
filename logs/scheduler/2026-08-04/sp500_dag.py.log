@@ -2714,3 +2714,108 @@ sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate
 [2026-08-04T05:35:05.423+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:35:05.422+0000] {dag.py:3036} INFO - Sync 1 DAGs
 [2026-08-04T05:35:05.479+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:35:05.478+0000] {dag.py:3823} INFO - Setting next_dagrun for sp500_financial_pipeline to 2026-08-04 00:00:00+00:00, run_after=2026-08-05 00:00:00+00:00
 [2026-08-04T05:35:05.574+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sp500_dag.py took 2.393 seconds
+[2026-08-04T05:35:36.452+0000] {processor.py:161} INFO - Started process (PID=2137) to work on /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:35:36.455+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sp500_dag.py for tasks to queue
+[2026-08-04T05:35:36.463+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:35:36.461+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:35:42.053+0000] {processor.py:840} INFO - DAG(s) 'sp500_financial_pipeline' retrieved from /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:35:42.131+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:35:42.130+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-04T05:35:42.179+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:35:42.178+0000] {dag.py:3823} INFO - Setting next_dagrun for sp500_financial_pipeline to 2026-08-04 00:00:00+00:00, run_after=2026-08-05 00:00:00+00:00
+[2026-08-04T05:35:42.320+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sp500_dag.py took 5.883 seconds
+[2026-08-04T05:36:12.583+0000] {processor.py:161} INFO - Started process (PID=2144) to work on /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:36:12.587+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sp500_dag.py for tasks to queue
+[2026-08-04T05:36:12.591+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:36:12.590+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:36:14.010+0000] {processor.py:840} INFO - DAG(s) 'sp500_financial_pipeline' retrieved from /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:36:14.049+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:36:14.048+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-04T05:36:14.080+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:36:14.079+0000] {dag.py:3823} INFO - Setting next_dagrun for sp500_financial_pipeline to 2026-08-04 00:00:00+00:00, run_after=2026-08-05 00:00:00+00:00
+[2026-08-04T05:36:14.164+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sp500_dag.py took 1.593 seconds
+[2026-08-04T05:36:44.464+0000] {processor.py:161} INFO - Started process (PID=2151) to work on /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:36:44.466+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sp500_dag.py for tasks to queue
+[2026-08-04T05:36:44.469+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:36:44.468+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:36:48.951+0000] {processor.py:840} INFO - DAG(s) 'sp500_financial_pipeline' retrieved from /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:36:49.058+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:36:49.057+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-04T05:36:49.194+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:36:49.193+0000] {dag.py:3823} INFO - Setting next_dagrun for sp500_financial_pipeline to 2026-08-04 00:00:00+00:00, run_after=2026-08-05 00:00:00+00:00
+[2026-08-04T05:36:49.341+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sp500_dag.py took 4.883 seconds
+[2026-08-04T05:37:19.624+0000] {processor.py:161} INFO - Started process (PID=2158) to work on /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:37:19.632+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sp500_dag.py for tasks to queue
+[2026-08-04T05:37:19.636+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:37:19.635+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:37:21.159+0000] {processor.py:840} INFO - DAG(s) 'sp500_financial_pipeline' retrieved from /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:37:21.209+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:37:21.208+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-04T05:37:21.263+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:37:21.263+0000] {dag.py:3823} INFO - Setting next_dagrun for sp500_financial_pipeline to 2026-08-04 00:00:00+00:00, run_after=2026-08-05 00:00:00+00:00
+[2026-08-04T05:37:21.381+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sp500_dag.py took 1.814 seconds
+[2026-08-04T05:37:51.937+0000] {processor.py:161} INFO - Started process (PID=2165) to work on /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:37:51.940+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sp500_dag.py for tasks to queue
+[2026-08-04T05:37:51.942+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:37:51.942+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:37:53.112+0000] {processor.py:840} INFO - DAG(s) 'sp500_financial_pipeline' retrieved from /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:37:53.163+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:37:53.162+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-04T05:37:53.261+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:37:53.260+0000] {dag.py:3823} INFO - Setting next_dagrun for sp500_financial_pipeline to 2026-08-04 00:00:00+00:00, run_after=2026-08-05 00:00:00+00:00
+[2026-08-04T05:37:53.335+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sp500_dag.py took 1.405 seconds
+[2026-08-04T05:38:23.822+0000] {processor.py:161} INFO - Started process (PID=2172) to work on /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:38:23.825+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sp500_dag.py for tasks to queue
+[2026-08-04T05:38:23.827+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:38:23.827+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:38:25.071+0000] {processor.py:840} INFO - DAG(s) 'sp500_financial_pipeline' retrieved from /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:38:25.145+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:38:25.143+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-04T05:38:25.251+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:38:25.251+0000] {dag.py:3823} INFO - Setting next_dagrun for sp500_financial_pipeline to 2026-08-04 00:00:00+00:00, run_after=2026-08-05 00:00:00+00:00
+[2026-08-04T05:38:25.353+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sp500_dag.py took 1.540 seconds
+[2026-08-04T05:38:56.146+0000] {processor.py:161} INFO - Started process (PID=2179) to work on /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:38:56.150+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sp500_dag.py for tasks to queue
+[2026-08-04T05:38:56.154+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:38:56.153+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:38:57.466+0000] {processor.py:840} INFO - DAG(s) 'sp500_financial_pipeline' retrieved from /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:38:57.501+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:38:57.500+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-04T05:38:57.548+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:38:57.548+0000] {dag.py:3823} INFO - Setting next_dagrun for sp500_financial_pipeline to 2026-08-04 00:00:00+00:00, run_after=2026-08-05 00:00:00+00:00
+[2026-08-04T05:38:57.610+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sp500_dag.py took 1.475 seconds
+[2026-08-04T05:39:28.171+0000] {processor.py:161} INFO - Started process (PID=2186) to work on /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:39:28.175+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sp500_dag.py for tasks to queue
+[2026-08-04T05:39:28.178+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:39:28.178+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:39:29.553+0000] {processor.py:840} INFO - DAG(s) 'sp500_financial_pipeline' retrieved from /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:39:29.601+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:39:29.601+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-04T05:39:29.638+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:39:29.638+0000] {dag.py:3823} INFO - Setting next_dagrun for sp500_financial_pipeline to 2026-08-04 00:00:00+00:00, run_after=2026-08-05 00:00:00+00:00
+[2026-08-04T05:39:29.704+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sp500_dag.py took 1.541 seconds
+[2026-08-04T05:40:00.436+0000] {processor.py:161} INFO - Started process (PID=2193) to work on /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:40:00.447+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sp500_dag.py for tasks to queue
+[2026-08-04T05:40:00.450+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:40:00.450+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:40:01.925+0000] {processor.py:840} INFO - DAG(s) 'sp500_financial_pipeline' retrieved from /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:40:01.959+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:40:01.958+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-04T05:40:01.988+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:40:01.988+0000] {dag.py:3823} INFO - Setting next_dagrun for sp500_financial_pipeline to 2026-08-04 00:00:00+00:00, run_after=2026-08-05 00:00:00+00:00
+[2026-08-04T05:40:02.061+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sp500_dag.py took 1.651 seconds
+[2026-08-04T05:40:32.778+0000] {processor.py:161} INFO - Started process (PID=2200) to work on /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:40:32.780+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sp500_dag.py for tasks to queue
+[2026-08-04T05:40:32.783+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:40:32.782+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:40:33.832+0000] {processor.py:840} INFO - DAG(s) 'sp500_financial_pipeline' retrieved from /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:40:33.866+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:40:33.865+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-04T05:40:33.894+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:40:33.893+0000] {dag.py:3823} INFO - Setting next_dagrun for sp500_financial_pipeline to 2026-08-04 00:00:00+00:00, run_after=2026-08-05 00:00:00+00:00
+[2026-08-04T05:40:33.967+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sp500_dag.py took 1.196 seconds
+[2026-08-04T05:41:04.479+0000] {processor.py:161} INFO - Started process (PID=2207) to work on /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:41:04.482+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sp500_dag.py for tasks to queue
+[2026-08-04T05:41:04.485+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:41:04.484+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:41:05.728+0000] {processor.py:840} INFO - DAG(s) 'sp500_financial_pipeline' retrieved from /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:41:05.777+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:41:05.777+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-04T05:41:05.808+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:41:05.808+0000] {dag.py:3823} INFO - Setting next_dagrun for sp500_financial_pipeline to 2026-08-04 00:00:00+00:00, run_after=2026-08-05 00:00:00+00:00
+[2026-08-04T05:41:05.882+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sp500_dag.py took 1.408 seconds
+[2026-08-04T05:41:36.172+0000] {processor.py:161} INFO - Started process (PID=2214) to work on /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:41:36.176+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sp500_dag.py for tasks to queue
+[2026-08-04T05:41:36.178+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:41:36.178+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:41:37.148+0000] {processor.py:840} INFO - DAG(s) 'sp500_financial_pipeline' retrieved from /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:41:37.182+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:41:37.181+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-04T05:41:37.223+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:41:37.222+0000] {dag.py:3823} INFO - Setting next_dagrun for sp500_financial_pipeline to 2026-08-04 00:00:00+00:00, run_after=2026-08-05 00:00:00+00:00
+[2026-08-04T05:41:37.285+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sp500_dag.py took 1.121 seconds
+[2026-08-04T05:42:07.764+0000] {processor.py:161} INFO - Started process (PID=2221) to work on /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:42:07.767+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sp500_dag.py for tasks to queue
+[2026-08-04T05:42:07.772+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:42:07.772+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:42:10.797+0000] {processor.py:840} INFO - DAG(s) 'sp500_financial_pipeline' retrieved from /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:42:10.842+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:42:10.842+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-04T05:42:10.881+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:42:10.881+0000] {dag.py:3823} INFO - Setting next_dagrun for sp500_financial_pipeline to 2026-08-04 00:00:00+00:00, run_after=2026-08-05 00:00:00+00:00
+[2026-08-04T05:42:10.962+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sp500_dag.py took 3.224 seconds
+[2026-08-04T05:42:41.406+0000] {processor.py:161} INFO - Started process (PID=2228) to work on /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:42:41.413+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sp500_dag.py for tasks to queue
+[2026-08-04T05:42:41.418+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:42:41.417+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:42:42.925+0000] {processor.py:840} INFO - DAG(s) 'sp500_financial_pipeline' retrieved from /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:42:42.957+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:42:42.956+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-04T05:42:43.007+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:42:43.007+0000] {dag.py:3823} INFO - Setting next_dagrun for sp500_financial_pipeline to 2026-08-04 00:00:00+00:00, run_after=2026-08-05 00:00:00+00:00
+[2026-08-04T05:42:43.080+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sp500_dag.py took 1.690 seconds
+[2026-08-04T05:43:13.701+0000] {processor.py:161} INFO - Started process (PID=2235) to work on /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:43:13.707+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sp500_dag.py for tasks to queue
+[2026-08-04T05:43:13.715+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:43:13.714+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:43:16.489+0000] {processor.py:840} INFO - DAG(s) 'sp500_financial_pipeline' retrieved from /opt/airflow/dags/sp500_dag.py
+[2026-08-04T05:43:16.525+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:43:16.525+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-04T05:43:16.595+0000] {logging_mixin.py:188} INFO - [2026-08-04T05:43:16.595+0000] {dag.py:3823} INFO - Setting next_dagrun for sp500_financial_pipeline to 2026-08-04 00:00:00+00:00, run_after=2026-08-05 00:00:00+00:00
+[2026-08-04T05:43:16.708+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sp500_dag.py took 3.029 seconds
